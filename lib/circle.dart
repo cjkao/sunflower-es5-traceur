@@ -6,6 +6,7 @@ library circle;
 
 class Circle {
   final num x, y, radius;
-
+  String aa;
   Circle(this.x, this.y, this.radius);
+
 }

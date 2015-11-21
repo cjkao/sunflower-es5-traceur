@@ -6,10 +6,10 @@ library sunflower;
 
 import 'dart:math';
   
-import 'circle.dart';
-//import 'dom.dart';
-import 'dart:html';
-import 'painter.dart';
+import 'packages/strongdart/circle.dart';
+import 'packages/strongdart/dom.dart';
+//import 'dart:html';
+import 'packages/strongdart/painter.dart';
 
 const SEED_RADIUS = 2;
 const SCALE_FACTOR = 4;
@@ -28,7 +28,6 @@ int seeds = 0;
 
 void main() {
   slider.addEventListener('change', (e) => draw());
-  
   draw();
 }
 
