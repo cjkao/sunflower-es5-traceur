@@ -87,7 +87,10 @@ dart_library.library('dart/_rtti', null, [], ['dart/core', 'dart/_types'], funct
   }
   exports.tag = tag;
   function tagComputed(value, compute) {
-    defineProperty(value, _runtimeType, {get: compute});
+    if(value !=0){
+    defineProperty(value, _runtimeType, {get: compute});  
+    }
+    
   }
   exports.tagComputed = tagComputed;
   function tagMemoized(value, compute) {

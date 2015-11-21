@@ -7,19 +7,19 @@ dart_library.library('sunflower', null, ["dart/_runtime", 'packages/strongdart/d
   var centerX = dart.notNull(MAX_D) / 2;
   var centerY = centerX;
   function querySelector(selector) {
-    return dom.document.querySelector(selector);
+    return document.querySelector(selector);
   }
-  dart.fn(querySelector, dom.Element, [core.String]);
+  dart.fn(querySelector, Element, [core.String]);
   exports.seeds = 0;
   dart.defineLazyProperties(exports, {
     get canvas() {
-      return dart.as(querySelector("#canvas"), dom.CanvasElement);
+      return dart.as(querySelector("#canvas"), Element);
     },
     get context() {
-      return dart.as(exports.canvas.getContext('2d'), dom.CanvasRenderingContext2D);
+      return dart.as(exports.canvas.getContext('2d'), CanvasRenderingContext2D);
     },
     get slider() {
-      return dart.as(querySelector("#slider"), dom.InputElement);
+      return dart.as(querySelector("#slider"), Element);
     },
     get notes() {
       return querySelector("#notes");

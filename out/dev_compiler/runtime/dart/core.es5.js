@@ -11,34 +11,34 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
         result = ($__32 = this)[name].apply($__32, $traceurRuntime.spread(arguments));
       return result === void 0 ? this : result;
     }
-    return ($traceurRuntime.createClass)(Object, ($__24 = {}, Object.defineProperty($__24, '==', {
+    return ($traceurRuntime.createClass)(Object, ($__24 = {}, window.Object.defineProperty($__24, '==', {
       value: function(other) {
         return identical(this, other);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "hashCode", {
+    }), window.Object.defineProperty($__24, "hashCode", {
       get: function() {
         return _js_helper.Primitives.objectHashCode(this);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "toString", {
+    }), window.Object.defineProperty($__24, "toString", {
       value: function() {
         return _js_helper.Primitives.objectToString(this);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "noSuchMethod", {
+    }), window.Object.defineProperty($__24, "noSuchMethod", {
       value: function(invocation) {
         dart.throw(new NoSuchMethodError(this, invocation.memberName, invocation.positionalArguments, invocation.namedArguments));
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "runtimeType", {
+    }), window.Object.defineProperty($__24, "runtimeType", {
       get: function() {
         return dart.realRuntimeType(this);
       },
@@ -140,7 +140,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
     function DateTime() {
       $traceurRuntime.superConstructor(DateTime).apply(this, arguments);
     }
-    return ($traceurRuntime.createClass)(DateTime, ($__24 = {}, Object.defineProperty($__24, "DateTime", {
+    return ($traceurRuntime.createClass)(DateTime, ($__24 = {}, window.Object.defineProperty($__24, "DateTime", {
       value: function(year, month, day, hour, minute, second, millisecond) {
         if (month === void 0)
           month = 1;
@@ -159,7 +159,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "utc", {
+    }), window.Object.defineProperty($__24, "utc", {
       value: function(year, month, day, hour, minute, second, millisecond) {
         if (month === void 0)
           month = 1;
@@ -178,14 +178,14 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "now", {
+    }), window.Object.defineProperty($__24, "now", {
       value: function() {
         this._now();
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "fromMillisecondsSinceEpoch", {
+    }), window.Object.defineProperty($__24, "fromMillisecondsSinceEpoch", {
       value: function(millisecondsSinceEpoch, opts) {
         var isUtc = opts && 'isUtc' in opts ? opts.isUtc : false;
         this.millisecondsSinceEpoch = millisecondsSinceEpoch;
@@ -199,7 +199,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '==', {
+    }), window.Object.defineProperty($__24, '==', {
       value: function(other) {
         if (!dart.is(other, DateTime))
           return false;
@@ -208,41 +208,41 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "isBefore", {
+    }), window.Object.defineProperty($__24, "isBefore", {
       value: function(other) {
         return dart.notNull(this.millisecondsSinceEpoch) < dart.notNull(other.millisecondsSinceEpoch);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "isAfter", {
+    }), window.Object.defineProperty($__24, "isAfter", {
       value: function(other) {
         return dart.notNull(this.millisecondsSinceEpoch) > dart.notNull(other.millisecondsSinceEpoch);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "isAtSameMomentAs", {
+    }), window.Object.defineProperty($__24, "isAtSameMomentAs", {
       value: function(other) {
         return this.millisecondsSinceEpoch == other.millisecondsSinceEpoch;
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "compareTo", {
+    }), window.Object.defineProperty($__24, "compareTo", {
       value: function(other) {
         return this.millisecondsSinceEpoch[dartx.compareTo](other.millisecondsSinceEpoch);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "hashCode", {
+    }), window.Object.defineProperty($__24, "hashCode", {
       get: function() {
         return this.millisecondsSinceEpoch;
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "toLocal", {
+    }), window.Object.defineProperty($__24, "toLocal", {
       value: function() {
         if (dart.notNull(this.isUtc)) {
           return new DateTime.fromMillisecondsSinceEpoch(this.millisecondsSinceEpoch, {isUtc: false});
@@ -252,7 +252,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "toUtc", {
+    }), window.Object.defineProperty($__24, "toUtc", {
       value: function() {
         if (dart.notNull(this.isUtc))
           return this;
@@ -261,7 +261,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "toString", {
+    }), window.Object.defineProperty($__24, "toString", {
       value: function() {
         var y = DateTime._fourDigits(this.year);
         var m = DateTime._twoDigits(this.month);
@@ -279,7 +279,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "toIso8601String", {
+    }), window.Object.defineProperty($__24, "toIso8601String", {
       value: function() {
         var y = dart.notNull(this.year) >= -9999 && dart.notNull(this.year) <= 9999 ? DateTime._fourDigits(this.year) : DateTime._sixDigits(this.year);
         var m = DateTime._twoDigits(this.month);
@@ -297,7 +297,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "add", {
+    }), window.Object.defineProperty($__24, "add", {
       value: function(duration) {
         var ms = this.millisecondsSinceEpoch;
         return new DateTime.fromMillisecondsSinceEpoch(dart.notNull(ms) + dart.notNull(duration.inMilliseconds), {isUtc: this.isUtc});
@@ -305,7 +305,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "subtract", {
+    }), window.Object.defineProperty($__24, "subtract", {
       value: function(duration) {
         var ms = this.millisecondsSinceEpoch;
         return new DateTime.fromMillisecondsSinceEpoch(dart.notNull(ms) - dart.notNull(duration.inMilliseconds), {isUtc: this.isUtc});
@@ -313,7 +313,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "difference", {
+    }), window.Object.defineProperty($__24, "difference", {
       value: function(other) {
         var ms = this.millisecondsSinceEpoch;
         var otherMs = other.millisecondsSinceEpoch;
@@ -322,7 +322,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "_internal", {
+    }), window.Object.defineProperty($__24, "_internal", {
       value: function(year, month, day, hour, minute, second, millisecond, isUtc) {
         this.isUtc = typeof isUtc == 'boolean' ? isUtc : dart.throw(new ArgumentError(isUtc));
         this.millisecondsSinceEpoch = dart.as(_js_helper.checkInt(_js_helper.Primitives.valueFromDecomposedDate(year, month, day, hour, minute, second, millisecond, isUtc)), int);
@@ -330,7 +330,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "_now", {
+    }), window.Object.defineProperty($__24, "_now", {
       value: function() {
         this.isUtc = false;
         this.millisecondsSinceEpoch = _js_helper.Primitives.dateNow();
@@ -338,7 +338,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "timeZoneName", {
+    }), window.Object.defineProperty($__24, "timeZoneName", {
       get: function() {
         if (dart.notNull(this.isUtc))
           return "UTC";
@@ -346,7 +346,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "timeZoneOffset", {
+    }), window.Object.defineProperty($__24, "timeZoneOffset", {
       get: function() {
         if (dart.notNull(this.isUtc))
           return new Duration();
@@ -354,49 +354,49 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "year", {
+    }), window.Object.defineProperty($__24, "year", {
       get: function() {
         return dart.as(_js_helper.Primitives.getYear(this), int);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "month", {
+    }), window.Object.defineProperty($__24, "month", {
       get: function() {
         return dart.as(_js_helper.Primitives.getMonth(this), int);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "day", {
+    }), window.Object.defineProperty($__24, "day", {
       get: function() {
         return dart.as(_js_helper.Primitives.getDay(this), int);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "hour", {
+    }), window.Object.defineProperty($__24, "hour", {
       get: function() {
         return dart.as(_js_helper.Primitives.getHours(this), int);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "minute", {
+    }), window.Object.defineProperty($__24, "minute", {
       get: function() {
         return dart.as(_js_helper.Primitives.getMinutes(this), int);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "second", {
+    }), window.Object.defineProperty($__24, "second", {
       get: function() {
         return dart.as(_js_helper.Primitives.getSeconds(this), int);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "millisecond", {
+    }), window.Object.defineProperty($__24, "millisecond", {
       get: function() {
         return dart.as(_js_helper.Primitives.getMilliseconds(this), int);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "weekday", {
+    }), window.Object.defineProperty($__24, "weekday", {
       get: function() {
         return dart.as(_js_helper.Primitives.getWeekday(this), int);
       },
@@ -629,7 +629,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
     function Duration() {
       $traceurRuntime.superConstructor(Duration).apply(this, arguments);
     }
-    return ($traceurRuntime.createClass)(Duration, ($__24 = {}, Object.defineProperty($__24, "Duration", {
+    return ($traceurRuntime.createClass)(Duration, ($__24 = {}, window.Object.defineProperty($__24, "Duration", {
       value: function(opts) {
         var days = opts && 'days' in opts ? opts.days : 0;
         var hours = opts && 'hours' in opts ? opts.hours : 0;
@@ -642,35 +642,35 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "_microseconds", {
+    }), window.Object.defineProperty($__24, "_microseconds", {
       value: function(duration) {
         this[_duration] = duration;
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '+', {
+    }), window.Object.defineProperty($__24, '+', {
       value: function(other) {
         return new Duration._microseconds(dart.notNull(this[_duration]) + dart.notNull(other[_duration]));
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '-', {
+    }), window.Object.defineProperty($__24, '-', {
       value: function(other) {
         return new Duration._microseconds(dart.notNull(this[_duration]) - dart.notNull(other[_duration]));
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '*', {
+    }), window.Object.defineProperty($__24, '*', {
       value: function(factor) {
         return new Duration._microseconds((dart.notNull(this[_duration]) * dart.notNull(factor))[dartx.round]());
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '~/', {
+    }), window.Object.defineProperty($__24, '~/', {
       value: function(quotient) {
         if (quotient == 0)
           dart.throw(new IntegerDivisionByZeroException());
@@ -679,71 +679,71 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '<', {
+    }), window.Object.defineProperty($__24, '<', {
       value: function(other) {
         return dart.notNull(this[_duration]) < dart.notNull(other[_duration]);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '>', {
+    }), window.Object.defineProperty($__24, '>', {
       value: function(other) {
         return dart.notNull(this[_duration]) > dart.notNull(other[_duration]);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '<=', {
+    }), window.Object.defineProperty($__24, '<=', {
       value: function(other) {
         return dart.notNull(this[_duration]) <= dart.notNull(other[_duration]);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '>=', {
+    }), window.Object.defineProperty($__24, '>=', {
       value: function(other) {
         return dart.notNull(this[_duration]) >= dart.notNull(other[_duration]);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "inDays", {
+    }), window.Object.defineProperty($__24, "inDays", {
       get: function() {
         return (dart.notNull(this[_duration]) / dart.notNull(Duration.MICROSECONDS_PER_DAY))[dartx.truncate]();
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "inHours", {
+    }), window.Object.defineProperty($__24, "inHours", {
       get: function() {
         return (dart.notNull(this[_duration]) / dart.notNull(Duration.MICROSECONDS_PER_HOUR))[dartx.truncate]();
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "inMinutes", {
+    }), window.Object.defineProperty($__24, "inMinutes", {
       get: function() {
         return (dart.notNull(this[_duration]) / dart.notNull(Duration.MICROSECONDS_PER_MINUTE))[dartx.truncate]();
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "inSeconds", {
+    }), window.Object.defineProperty($__24, "inSeconds", {
       get: function() {
         return (dart.notNull(this[_duration]) / dart.notNull(Duration.MICROSECONDS_PER_SECOND))[dartx.truncate]();
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "inMilliseconds", {
+    }), window.Object.defineProperty($__24, "inMilliseconds", {
       get: function() {
         return (dart.notNull(this[_duration]) / dart.notNull(Duration.MICROSECONDS_PER_MILLISECOND))[dartx.truncate]();
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "inMicroseconds", {
+    }), window.Object.defineProperty($__24, "inMicroseconds", {
       get: function() {
         return this[_duration];
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, '==', {
+    }), window.Object.defineProperty($__24, '==', {
       value: function(other) {
         if (!dart.is(other, Duration))
           return false;
@@ -752,20 +752,20 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "hashCode", {
+    }), window.Object.defineProperty($__24, "hashCode", {
       get: function() {
         return dart.hashCode(this[_duration]);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "compareTo", {
+    }), window.Object.defineProperty($__24, "compareTo", {
       value: function(other) {
         return this[_duration][dartx.compareTo](other[_duration]);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "toString", {
+    }), window.Object.defineProperty($__24, "toString", {
       value: function() {
         function sixDigits(n) {
           if (dart.notNull(n) >= 100000)
@@ -798,20 +798,20 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "isNegative", {
+    }), window.Object.defineProperty($__24, "isNegative", {
       get: function() {
         return dart.notNull(this[_duration]) < 0;
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "abs", {
+    }), window.Object.defineProperty($__24, "abs", {
       value: function() {
         return new Duration._microseconds(this[_duration][dartx.abs]());
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, 'unary-', {
+    }), window.Object.defineProperty($__24, 'unary-', {
       value: function() {
         return new Duration._microseconds(-dart.notNull(this[_duration]));
       },
@@ -1553,7 +1553,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       function Expando() {
         $traceurRuntime.superConstructor(Expando).apply(this, arguments);
       }
-      return ($traceurRuntime.createClass)(Expando, ($__24 = {}, Object.defineProperty($__24, "Expando", {
+      return ($traceurRuntime.createClass)(Expando, ($__24 = {}, window.Object.defineProperty($__24, "Expando", {
         value: function(name) {
           if (name === void 0)
             name = null;
@@ -1562,14 +1562,14 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "toString", {
+      }), window.Object.defineProperty($__24, "toString", {
         value: function() {
           return ("Expando:" + this.name);
         },
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "get", {
+      }), window.Object.defineProperty($__24, "get", {
         value: function(object) {
           var values = _js_helper.Primitives.getProperty(object, Expando$()._EXPANDO_PROPERTY_NAME);
           return values == null ? null : dart.as(_js_helper.Primitives.getProperty(values, this[_getKey]()), T);
@@ -1577,7 +1577,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "set", {
+      }), window.Object.defineProperty($__24, "set", {
         value: function(object, value) {
           dart.as(value, T);
           var values = _js_helper.Primitives.getProperty(object, Expando$()._EXPANDO_PROPERTY_NAME);
@@ -1591,7 +1591,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, _getKey, {
+      }), window.Object.defineProperty($__24, _getKey, {
         value: function() {
           var key = dart.as(_js_helper.Primitives.getProperty(this, Expando$()._KEY_PROPERTY_NAME), String);
           if (key == null) {
@@ -1615,17 +1615,17 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       methods: function() {
         var $__24;
-        return (($__24 = {}, Object.defineProperty($__24, "get", {
+        return (($__24 = {}, window.Object.defineProperty($__24, "get", {
           value: [T, [Object]],
           configurable: true,
           enumerable: true,
           writable: true
-        }), Object.defineProperty($__24, "set", {
+        }), window.Object.defineProperty($__24, "set", {
           value: [dart.void, [Object, T]],
           configurable: true,
           enumerable: true,
           writable: true
-        }), Object.defineProperty($__24, _getKey, {
+        }), window.Object.defineProperty($__24, _getKey, {
           value: [String, []],
           configurable: true,
           enumerable: true,
@@ -1720,19 +1720,19 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       function Iterable() {
         $traceurRuntime.superConstructor(Iterable).apply(this, arguments);
       }
-      return ($traceurRuntime.createClass)(Iterable, ($__24 = {}, Object.defineProperty($__24, "Iterable", {
+      return ($traceurRuntime.createClass)(Iterable, ($__24 = {}, window.Object.defineProperty($__24, "Iterable", {
         value: function() {},
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, dart.JsSymbol.iterator, {
+      }), window.Object.defineProperty($__24, dart.JsSymbol.iterator, {
         value: function() {
           return new dart.JsIterator(this[dartx.iterator]);
         },
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, dartx.join, {
+      }), window.Object.defineProperty($__24, dartx.join, {
         value: function(separator) {
           if (separator === void 0)
             separator = "";
@@ -1760,7 +1760,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       methods: function() {
         var $__24;
-        return (($__24 = {}, Object.defineProperty($__24, dartx.join, {
+        return (($__24 = {}, window.Object.defineProperty($__24, dartx.join, {
           value: [String, [], [String]],
           configurable: true,
           enumerable: true,
@@ -1925,7 +1925,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       function List() {
         $traceurRuntime.superConstructor(List).apply(this, arguments);
       }
-      return ($traceurRuntime.createClass)(List, ($__24 = {}, Object.defineProperty($__24, dart.JsSymbol.iterator, {
+      return ($traceurRuntime.createClass)(List, ($__24 = {}, window.Object.defineProperty($__24, dart.JsSymbol.iterator, {
         value: function() {
           return new dart.JsIterator(this[dartx.iterator]);
         },
@@ -2379,7 +2379,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
     function RuneIterator() {
       $traceurRuntime.superConstructor(RuneIterator).apply(this, arguments);
     }
-    return ($traceurRuntime.createClass)(RuneIterator, ($__24 = {}, Object.defineProperty($__24, "RuneIterator", {
+    return ($traceurRuntime.createClass)(RuneIterator, ($__24 = {}, window.Object.defineProperty($__24, "RuneIterator", {
       value: function(string) {
         this.string = string;
         this[_position] = 0;
@@ -2389,7 +2389,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "at", {
+    }), window.Object.defineProperty($__24, "at", {
       value: function(string, index) {
         this.string = string;
         this[_position] = index;
@@ -2401,7 +2401,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, _checkSplitSurrogate, {
+    }), window.Object.defineProperty($__24, _checkSplitSurrogate, {
       value: function(index) {
         if (dart.notNull(index) > 0 && dart.notNull(index) < dart.notNull(this.string[dartx.length]) && dart.notNull(_isLeadSurrogate(this.string[dartx.codeUnitAt](dart.notNull(index) - 1))) && dart.notNull(_isTrailSurrogate(this.string[dartx.codeUnitAt](index)))) {
           dart.throw(new ArgumentError(("Index inside surrogate pair: " + index)));
@@ -2410,7 +2410,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "rawIndex", {
+    }), window.Object.defineProperty($__24, "rawIndex", {
       get: function() {
         return this[_position] != this[_nextPosition] ? this[_position] : null;
       },
@@ -2421,7 +2421,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
         this.reset(rawIndex);
         this.moveNext();
       }
-    }), Object.defineProperty($__24, "reset", {
+    }), window.Object.defineProperty($__24, "reset", {
       value: function(rawIndex) {
         if (rawIndex === void 0)
           rawIndex = 0;
@@ -2433,19 +2433,19 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "current", {
+    }), window.Object.defineProperty($__24, "current", {
       get: function() {
         return dart.asInt(this[_currentCodePoint]);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "currentSize", {
+    }), window.Object.defineProperty($__24, "currentSize", {
       get: function() {
         return dart.notNull(this[_nextPosition]) - dart.notNull(this[_position]);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "currentAsString", {
+    }), window.Object.defineProperty($__24, "currentAsString", {
       get: function() {
         if (this[_position] == this[_nextPosition])
           return null;
@@ -2455,7 +2455,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "moveNext", {
+    }), window.Object.defineProperty($__24, "moveNext", {
       value: function() {
         this[_position] = this[_nextPosition];
         if (this[_position] == this.string[dartx.length]) {
@@ -2479,7 +2479,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "movePrevious", {
+    }), window.Object.defineProperty($__24, "movePrevious", {
       value: function() {
         this[_nextPosition] = this[_position];
         if (this[_position] == 0) {
@@ -2518,22 +2518,22 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
     },
     methods: function() {
       var $__24;
-      return (($__24 = {}, Object.defineProperty($__24, _checkSplitSurrogate, {
+      return (($__24 = {}, window.Object.defineProperty($__24, _checkSplitSurrogate, {
         value: [dart.void, [int]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "reset", {
+      }), window.Object.defineProperty($__24, "reset", {
         value: [dart.void, [], [int]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "moveNext", {
+      }), window.Object.defineProperty($__24, "moveNext", {
         value: [bool, []],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "movePrevious", {
+      }), window.Object.defineProperty($__24, "movePrevious", {
         value: [bool, []],
         configurable: true,
         enumerable: true,
@@ -2548,7 +2548,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
     function StringBuffer() {
       $traceurRuntime.superConstructor(StringBuffer).apply(this, arguments);
     }
-    return ($traceurRuntime.createClass)(StringBuffer, ($__24 = {}, Object.defineProperty($__24, "StringBuffer", {
+    return ($traceurRuntime.createClass)(StringBuffer, ($__24 = {}, window.Object.defineProperty($__24, "StringBuffer", {
       value: function(content) {
         if (content === void 0)
           content = "";
@@ -2557,39 +2557,39 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "length", {
+    }), window.Object.defineProperty($__24, "length", {
       get: function() {
         return this[_contents][dartx.length];
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "isEmpty", {
+    }), window.Object.defineProperty($__24, "isEmpty", {
       get: function() {
         return this.length == 0;
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "isNotEmpty", {
+    }), window.Object.defineProperty($__24, "isNotEmpty", {
       get: function() {
         return !dart.notNull(this.isEmpty);
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "write", {
+    }), window.Object.defineProperty($__24, "write", {
       value: function(obj) {
         this[_writeString](("" + obj));
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "writeCharCode", {
+    }), window.Object.defineProperty($__24, "writeCharCode", {
       value: function(charCode) {
         this[_writeString](String.fromCharCode(charCode));
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "writeAll", {
+    }), window.Object.defineProperty($__24, "writeAll", {
       value: function(objects, separator) {
         if (separator === void 0)
           separator = "";
@@ -2611,7 +2611,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "writeln", {
+    }), window.Object.defineProperty($__24, "writeln", {
       value: function(obj) {
         if (obj === void 0)
           obj = "";
@@ -2621,21 +2621,21 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "clear", {
+    }), window.Object.defineProperty($__24, "clear", {
       value: function() {
         this[_contents] = "";
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "toString", {
+    }), window.Object.defineProperty($__24, "toString", {
       value: function() {
         return _js_helper.Primitives.flattenString(this[_contents]);
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, _writeString, {
+    }), window.Object.defineProperty($__24, _writeString, {
       value: function(str) {
         this[_contents] = _js_helper.Primitives.stringConcatUnchecked(this[_contents], dart.as(str, String));
       },
@@ -2653,32 +2653,32 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
     },
     methods: function() {
       var $__24;
-      return (($__24 = {}, Object.defineProperty($__24, "write", {
+      return (($__24 = {}, window.Object.defineProperty($__24, "write", {
         value: [dart.void, [Object]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "writeCharCode", {
+      }), window.Object.defineProperty($__24, "writeCharCode", {
         value: [dart.void, [int]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "writeAll", {
+      }), window.Object.defineProperty($__24, "writeAll", {
         value: [dart.void, [Iterable], [String]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "writeln", {
+      }), window.Object.defineProperty($__24, "writeln", {
         value: [dart.void, [], [Object]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "clear", {
+      }), window.Object.defineProperty($__24, "clear", {
         value: [dart.void, []],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, _writeString, {
+      }), window.Object.defineProperty($__24, _writeString, {
         value: [dart.void, [dart.dynamic]],
         configurable: true,
         enumerable: true,
@@ -2729,7 +2729,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
     function Uri() {
       $traceurRuntime.superConstructor(Uri).apply(this, arguments);
     }
-    return ($traceurRuntime.createClass)(Uri, ($__24 = {}, Object.defineProperty($__24, "authority", {
+    return ($traceurRuntime.createClass)(Uri, ($__24 = {}, window.Object.defineProperty($__24, "authority", {
       get: function() {
         if (!dart.notNull(this.hasAuthority))
           return "";
@@ -2739,13 +2739,13 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "userInfo", {
+    }), window.Object.defineProperty($__24, "userInfo", {
       get: function() {
         return this[_userInfo];
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "host", {
+    }), window.Object.defineProperty($__24, "host", {
       get: function() {
         if (this[_host] == null)
           return "";
@@ -2756,7 +2756,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "port", {
+    }), window.Object.defineProperty($__24, "port", {
       get: function() {
         if (this[_port] == null)
           return Uri._defaultPort(this.scheme);
@@ -2764,25 +2764,25 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "path", {
+    }), window.Object.defineProperty($__24, "path", {
       get: function() {
         return this[_path];
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "query", {
+    }), window.Object.defineProperty($__24, "query", {
       get: function() {
         return this[_query] == null ? "" : this[_query];
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "fragment", {
+    }), window.Object.defineProperty($__24, "fragment", {
       get: function() {
         return this[_fragment] == null ? "" : this[_fragment];
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "_internal", {
+    }), window.Object.defineProperty($__24, "_internal", {
       value: function(scheme, userInfo, host, port, path, query, fragment) {
         this.scheme = scheme;
         this[_userInfo] = userInfo;
@@ -2797,7 +2797,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "replace", {
+    }), window.Object.defineProperty($__24, "replace", {
       value: function(opts) {
         var scheme = opts && 'scheme' in opts ? opts.scheme : null;
         var userInfo = opts && 'userInfo' in opts ? opts.userInfo : null;
@@ -2860,7 +2860,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "pathSegments", {
+    }), window.Object.defineProperty($__24, "pathSegments", {
       get: function() {
         if (this[_pathSegments] == null) {
           var pathToSplit = !dart.notNull(this.path[dartx.isEmpty]) && this.path[dartx.codeUnitAt](0) == Uri._SLASH ? this.path[dartx.substring](1) : this.path;
@@ -2870,7 +2870,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "queryParameters", {
+    }), window.Object.defineProperty($__24, "queryParameters", {
       get: function() {
         if (this[_queryParameters] == null) {
           this[_queryParameters] = new (collection.UnmodifiableMapView$(String, String))(Uri.splitQueryString(this.query));
@@ -2879,13 +2879,13 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "isAbsolute", {
+    }), window.Object.defineProperty($__24, "isAbsolute", {
       get: function() {
         return this.scheme != "" && this.fragment == "";
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, _merge, {
+    }), window.Object.defineProperty($__24, _merge, {
       value: function(base, reference) {
         if (dart.notNull(base[dartx.isEmpty]))
           return ("/" + reference);
@@ -2913,7 +2913,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, _hasDotSegments, {
+    }), window.Object.defineProperty($__24, _hasDotSegments, {
       value: function(path) {
         if (dart.notNull(path[dartx.length]) > 0 && path[dartx.codeUnitAt](0) == Uri._DOT)
           return true;
@@ -2923,7 +2923,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, _removeDotSegments, {
+    }), window.Object.defineProperty($__24, _removeDotSegments, {
       value: function(path) {
         if (!dart.notNull(this[_hasDotSegments](path)))
           return path;
@@ -2970,14 +2970,14 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "resolve", {
+    }), window.Object.defineProperty($__24, "resolve", {
       value: function(reference) {
         return this.resolveUri(Uri.parse(reference));
       },
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "resolveUri", {
+    }), window.Object.defineProperty($__24, "resolveUri", {
       value: function(reference) {
         var targetScheme = null;
         var targetUserInfo = "";
@@ -3033,31 +3033,31 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "hasAuthority", {
+    }), window.Object.defineProperty($__24, "hasAuthority", {
       get: function() {
         return this[_host] != null;
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "hasPort", {
+    }), window.Object.defineProperty($__24, "hasPort", {
       get: function() {
         return this[_port] != null;
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "hasQuery", {
+    }), window.Object.defineProperty($__24, "hasQuery", {
       get: function() {
         return this[_query] != null;
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "hasFragment", {
+    }), window.Object.defineProperty($__24, "hasFragment", {
       get: function() {
         return this[_fragment] != null;
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "origin", {
+    }), window.Object.defineProperty($__24, "origin", {
       get: function() {
         if (this.scheme == "" || this[_host] == null || this[_host] == "") {
           dart.throw(new StateError(("Cannot use origin without a scheme: " + this)));
@@ -3071,7 +3071,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, "toFilePath", {
+    }), window.Object.defineProperty($__24, "toFilePath", {
       value: function(opts) {
         var windows = opts && 'windows' in opts ? opts.windows : null;
         if (this.scheme != "" && this.scheme != "file") {
@@ -3090,7 +3090,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, _toFilePath, {
+    }), window.Object.defineProperty($__24, _toFilePath, {
       value: function() {
         if (this.host != "") {
           dart.throw(new UnsupportedError("Cannot extract a non-Windows file path from a file URI " + "with an authority"));
@@ -3105,7 +3105,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, _toWindowsFilePath, {
+    }), window.Object.defineProperty($__24, _toWindowsFilePath, {
       value: function() {
         var hasDriveLetter = false;
         var segments = this.pathSegments;
@@ -3132,7 +3132,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, _isPathAbsolute, {
+    }), window.Object.defineProperty($__24, _isPathAbsolute, {
       get: function() {
         if (this.path == null || dart.notNull(this.path[dartx.isEmpty]))
           return false;
@@ -3140,7 +3140,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       },
       configurable: true,
       enumerable: true
-    }), Object.defineProperty($__24, _writeAuthority, {
+    }), window.Object.defineProperty($__24, _writeAuthority, {
       value: function(ss) {
         if (dart.notNull(this[_userInfo][dartx.isNotEmpty])) {
           ss.write(this[_userInfo]);
@@ -3156,7 +3156,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "toString", {
+    }), window.Object.defineProperty($__24, "toString", {
       value: function() {
         var sb = new StringBuffer();
         Uri._addIfNonEmpty(sb, this.scheme, this.scheme, ':');
@@ -3178,7 +3178,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, '==', {
+    }), window.Object.defineProperty($__24, '==', {
       value: function(other) {
         if (!dart.is(other, Uri))
           return false;
@@ -3188,7 +3188,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
       configurable: true,
       enumerable: true,
       writable: true
-    }), Object.defineProperty($__24, "hashCode", {
+    }), window.Object.defineProperty($__24, "hashCode", {
       get: function() {
         function combine(part, current) {
           return dart.as(dart.dsend(dart.dsend(dart.dsend(current, '*', 31), '+', dart.hashCode(part)), '&', 1073741823), int);
@@ -4151,7 +4151,7 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
     },
     methods: function() {
       var $__24;
-      return (($__24 = {}, Object.defineProperty($__24, "replace", {
+      return (($__24 = {}, window.Object.defineProperty($__24, "replace", {
         value: [Uri, [], {
           scheme: String,
           userInfo: String,
@@ -4166,47 +4166,47 @@ dart_library.library('dart/core', null, ["dart/_runtime"], ['dart/_js_helper', '
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, _merge, {
+      }), window.Object.defineProperty($__24, _merge, {
         value: [String, [String, String]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, _hasDotSegments, {
+      }), window.Object.defineProperty($__24, _hasDotSegments, {
         value: [bool, [String]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, _removeDotSegments, {
+      }), window.Object.defineProperty($__24, _removeDotSegments, {
         value: [String, [String]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "resolve", {
+      }), window.Object.defineProperty($__24, "resolve", {
         value: [Uri, [String]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "resolveUri", {
+      }), window.Object.defineProperty($__24, "resolveUri", {
         value: [Uri, [Uri]],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, "toFilePath", {
+      }), window.Object.defineProperty($__24, "toFilePath", {
         value: [String, [], {windows: bool}],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, _toFilePath, {
+      }), window.Object.defineProperty($__24, _toFilePath, {
         value: [String, []],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, _toWindowsFilePath, {
+      }), window.Object.defineProperty($__24, _toWindowsFilePath, {
         value: [String, []],
         configurable: true,
         enumerable: true,
         writable: true
-      }), Object.defineProperty($__24, _writeAuthority, {
+      }), window.Object.defineProperty($__24, _writeAuthority, {
         value: [dart.void, [StringSink]],
         configurable: true,
         enumerable: true,
