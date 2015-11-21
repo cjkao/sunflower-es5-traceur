@@ -19,12 +19,13 @@ and the output is at ../codegen/expect/sunflower/sunflower.dart.js.
     }
 
 
-5.sunflower.es5.js, using document.querySelector
+5. sunflower.es5.js, using document.querySelector
+
+````
     function querySelector(selector) {
       return document.querySelector(selector);
     } 
-  
+````  
   * replace dom.InputElement and dom.CanvasElement to Element 
-  * replace dom.CanvasRenderingContext2D to CanvasRenderingContext2D
-
+  * replace dom.CanvasRenderingContext2D to CanvasRenderingContext2D  
 6. update out/index.html and copy png , css to out/
